@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You Notification Sent</title>
+
+    <style>
+        body {
+            background-color: #F8F8F8;
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+        }
+
+        h1 {
+            background-color: #3498DB;
+            color: #FFF;
+            padding: 20px;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        table { 
+            width: 80%;
+            margin: auto;
+            border-collapse: collapse;
+            margin-top: 40px;
+        }
+
+        table td, table th {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        table th {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        p {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        a {
+            display: block;
+            text-align: center;
+            margin-top: 30px;
+            font-size: 18px;
+            color: #3498DB;
+            text-decoration: none;
+            border: 2px solid #3498DB;
+            padding: 10px;
+            width: 200px;
+            margin: auto;
+            border-radius: 5px;
+        }
+
+        a:hover {
+            background-color: #3498DB;
+            color: #FFF;
+        }
+    </style>
+</head>
+<body>
+    <h1>Thank You Notification Sent</h1>
+
+    <table>
+        <tr>
+            <th>Details</th>
+            <th>Values</th>
+        </tr>
+        <tr>
+            <td>Product Name</td>
+            <td>{{ product_name }}</td>
+        </tr>
+        <tr>
+            <td>Desired Price</td>
+            <td>{{ desired_price }}</td>
+        </tr>
+        <tr>
+            <td>Current Price</td>
+            <td>{{ product_price }}</td>
+        </tr>
+        <tr>
+            <td>Email ID</td>
+            <td>{{ to_email }}</td>
+        </tr>
+    </table>
+
+    <p>Your notification has been sent successfully!</p>
+
+</body>
+</html>
