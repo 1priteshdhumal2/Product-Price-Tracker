@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Price Alert</title>
+
+
+    <style>
+        body {
+            background-color: #F8F8F8;
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+        }
+
+        h1 {
+            background-color: #3498DB;
+            color: #FFF;
+            padding: 20px;
+            text-align: center;
+            margin-top: 0;
+        }
+
+        table {
+            width: 80%;
+            margin: auto;
+            border-collapse: collapse;
+            margin-top: 40px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+            overflow: hidden;
+        }
+
+        table td, table th {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        table th {
+            background-color: #4CAF50;
+            color: white;
+            font-weight: bold;
+        }
+
+        table tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        table tr:hover {
+            background-color: #f5f5f5;
+        }
+
+        table td:last-child {
+            font-weight: bold;
+            color: #ff0000;
+        }
+
+        button {
+            display: block;
+            margin: 20px auto;
+            background-color: #4CAF50;
+            border: none;
+            color: #fff;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        button:hover {
+            background-color: #3e8e41;
+        }
+
+        input[type="text"], input[type="email"] {
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 4px;
+            border: 1px solid #ddd;
+            width: 100%;
+            box-sizing: border-box;
+            margin-bottom: 10px;
+        }
+
+        form {
+            margin-top: 40px;
+        }
+    </style>
+
+    
+</head>
+<body>
+    <h1>The Current Price Is Higher Than the Desired Price</h1>
+
+    <table>
+        <tr>
+            <th>Details</th>
+            <th>Values</th>
+        </tr>
+        <tr>
+            <td>Product Name</td>
+            <td>{{ product_name }}</td>
+        </tr>
+        <tr>
+            <td>Desired Price</td>
+            <td>{{ desired_price }}</td>
+        </tr>
+        <tr>
+            <td>Current Price</td>
+            <td>{{ product_price }}</td>
+        </tr>
+        <tr>
+            <td>Email ID</td>
+            <td>{{ to_email }}</td>
+        </tr>
+    </table>
+
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name">
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email address">
+
+        <button type="submit">Notify Me</button>
+    </form>
+</body>
+</
