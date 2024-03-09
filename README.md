@@ -22,7 +22,7 @@ This project is a web-based tool built with Flask that allows users to track pro
 
 1. Clone the repository:
    ```bash
-   git clone <repository_URL.git>
+   git clone <https://github.com/1priteshdhumal2/Product-Price-Tracker>
    cd Online-Product-Price-Tracker
    ```
 
